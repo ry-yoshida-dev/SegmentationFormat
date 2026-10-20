@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "segmentation-format"
+version = "0.0.1"
+authors = [
+  { name = "Ryuto Yoshida" },
+]
+description = "Export binary instance masks to COCO, YOLO segmentation, LabelMe and semantic label map formats."
+readme = "README.md"
+requires-python = ">=3.12"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Typing :: Typed",
+]
+dependencies = [
+    "numpy",
+    "opencv-contrib-python",
+    "geometry @ git+https://github.com/ry-yoshida-dev/Geometry.git@7a019d2696877c2beff959d8bb4b2e1efc9880c1",
+    "file-handler @ git+https://github.com/ry-yoshida-dev/FileHandler.git@edc8a79785e09e89a5c6a0a37e55c435c1e4e579",
+]
+
+[project.urls]
+Homepage = "https://github.com/ry-yoshida-dev/SegmentationFormat"
+"Bug Tracker" = "https://github.com/ry-yoshida-dev/SegmentationFormat/issues"
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "mypy", "basedpyright", "ruff"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+segmentation_format = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.mypy]
+strict = true
+mypy_path = "src"
+
+[tool.pyright]
+include = ["src", "tests"]
+typeCheckingMode = "strict"
+reportMissingTypeStubs = false
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint.flake8-bugbear]
+extend-immutable-calls = ["segmentation_format.mask.MaskPolygonizer"]

@@ -20,8 +20,8 @@ classifiers = [
 dependencies = [
     "numpy",
     "opencv-contrib-python",
-    "geometry @ git+https://github.com/ry-yoshida-dev/Geometry.git@7a019d2696877c2beff959d8bb4b2e1efc9880c1",
-    "file-handler @ git+https://github.com/ry-yoshida-dev/FileHandler.git@edc8a79785e09e89a5c6a0a37e55c435c1e4e579",
+    "geometry @ git+https://github.com/ry-yoshida-dev/Geometry.git",
+    "file-handler @ git+https://github.com/ry-yoshida-dev/FileHandler.git",
 ]
 
 [project.urls]

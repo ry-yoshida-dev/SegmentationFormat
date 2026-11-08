@@ -56,3 +56,6 @@ target-version = "py312"
 
 [tool.ruff.lint.flake8-bugbear]
 extend-immutable-calls = ["segmentation_format.mask.MaskPolygonizer"]
+
+[tool.uv]
+exclude-newer = "7 days"

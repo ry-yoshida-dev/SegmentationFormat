@@ -22,10 +22,9 @@ See [src/segmentation_format](src/segmentation_format/README.md) for the package
 
 ```bash
 pip install git+https://github.com/ry-yoshida-dev/SegmentationFormat.git
-pip install -e ".[dev]"
 ```
 
-## Examples
+## Usage
 
 ```python
 from pathlib import Path

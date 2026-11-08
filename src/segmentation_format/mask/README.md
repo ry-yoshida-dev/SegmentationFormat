@@ -3,8 +3,7 @@
 ## Overview
 
 Encodings of binary masks used by the writers. Polygons follow pixel edges (pixel `(x, y)` spans
-`[x, x + 1] x [y, y + 1]`), which pycocotools rasterizes back to the original region with holes filled. Contours are
-traced by OpenCV on the mask upsampled twice, so tracing stays fast on noisy masks.
+`[x, x + 1] x [y, y + 1]`), which pycocotools rasterizes back to the original region with holes filled.
 
 ## Components
 

@@ -18,8 +18,8 @@ classifiers = [
     "Typing :: Typed",
 ]
 dependencies = [
-    "numpy",
-    "opencv-contrib-python",
+    "numpy>=2.0",
+    "opencv-contrib-python>=4.10",
     "geometry @ git+https://github.com/ry-yoshida-dev/Geometry.git",
     "file-handler @ git+https://github.com/ry-yoshida-dev/FileHandler.git",
 ]
@@ -29,7 +29,7 @@ Homepage = "https://github.com/ry-yoshida-dev/SegmentationFormat"
 "Bug Tracker" = "https://github.com/ry-yoshida-dev/SegmentationFormat/issues"
 
 [project.optional-dependencies]
-dev = ["pytest>=8.0", "mypy", "basedpyright", "ruff"]
+dev = ["pytest>=8.0", "mypy>=2.4", "basedpyright>=1.40", "ruff>=0.17"]
 
 [tool.setuptools.packages.find]
 where = ["src"]

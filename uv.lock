@@ -7,7 +7,7 @@ resolution-markers = [
 ]
 
 [options]
-exclude-newer = "2026-11-01T01:07:27.789152Z"
+exclude-newer = "2026-11-01T07:22:16.596137Z"
 exclude-newer-span = "P7D"
 
 [[package]]
@@ -688,14 +688,14 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "basedpyright", marker = "extra == 'dev'" },
+    { name = "basedpyright", marker = "extra == 'dev'", specifier = ">=1.40" },
     { name = "file-handler", git = "https://github.com/ry-yoshida-dev/FileHandler.git" },
     { name = "geometry", git = "https://github.com/ry-yoshida-dev/Geometry.git" },
-    { name = "mypy", marker = "extra == 'dev'" },
-    { name = "numpy" },
-    { name = "opencv-contrib-python" },
+    { name = "mypy", marker = "extra == 'dev'", specifier = ">=2.4" },
+    { name = "numpy", specifier = ">=2.0" },
+    { name = "opencv-contrib-python", specifier = ">=4.10" },
     { name = "pytest", marker = "extra == 'dev'", specifier = ">=8.0" },
-    { name = "ruff", marker = "extra == 'dev'" },
+    { name = "ruff", marker = "extra == 'dev'", specifier = ">=0.17" },
 ]
 provides-extras = ["dev"]
 

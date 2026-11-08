@@ -6,7 +6,7 @@ import numpy as np
 from ...annotation import AnnotationDataset, ImageAnnotation
 from ...array_types import UInt8Array, UInt16Array
 from ..class_list_file import ClassListFile
-from ..per_image import PerImageAnnotationWriter
+from ..per_image_annotation_writer import PerImageAnnotationWriter
 
 
 class SemanticMaskWriter(PerImageAnnotationWriter):

@@ -3,7 +3,7 @@ from pathlib import Path
 from ...annotation import AnnotationDataset, ImageAnnotation, InstanceAnnotation
 from ...mask import MaskPolygonizer, Polygon
 from ..class_list_file import ClassListFile
-from ..per_image import PerImageAnnotationWriter
+from ..per_image_annotation_writer import PerImageAnnotationWriter
 
 
 class YoloWriter(PerImageAnnotationWriter):

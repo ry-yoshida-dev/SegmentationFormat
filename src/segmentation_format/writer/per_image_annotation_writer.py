@@ -3,7 +3,7 @@ from collections import Counter
 from pathlib import Path
 
 from ..annotation import AnnotationDataset, ImageAnnotation
-from .base import AnnotationWriter
+from .annotation_writer import AnnotationWriter
 
 
 class PerImageAnnotationWriter(AnnotationWriter):

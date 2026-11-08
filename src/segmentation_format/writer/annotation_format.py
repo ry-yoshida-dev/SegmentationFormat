@@ -1,7 +1,8 @@
 from enum import Enum
 
-from .base import AnnotationWriter
-from .formats import CocoWriter, LabelMeWriter, SemanticMaskWriter, YoloWriter
+from .annotation_writer import AnnotationWriter
+from .annotation_writers import CocoWriter
+from .per_image_annotation_writers import LabelMeWriter, SemanticMaskWriter, YoloWriter
 
 
 class AnnotationFormat(Enum):

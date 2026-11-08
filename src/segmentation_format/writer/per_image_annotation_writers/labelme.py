@@ -5,7 +5,7 @@ from file_handler import FileHandler
 from ...annotation import AnnotationDataset, ImageAnnotation, InstanceAnnotation
 from ...mask import MaskPolygonizer, Polygon
 from ..json_value import JsonValue
-from ..per_image import PerImageAnnotationWriter
+from ..per_image_annotation_writer import PerImageAnnotationWriter
 
 
 class LabelMeWriter(PerImageAnnotationWriter):

@@ -10,10 +10,12 @@ Per-image formats name each label file after the image stem and refuse to write 
 
 | Component | Description |
 | --------- | ----------- |
-| [base.py](./base.py) | `AnnotationWriter`: abstract writer. |
-| [per_image.py](./per_image.py) | `PerImageAnnotationWriter`: base for formats with one label file per image, written by `write_label`. |
+| [annotation_writer.py](./annotation_writer.py) | `AnnotationWriter`: abstract writer. |
+| [annotation_writers/](./annotation_writers/README.md) | Single-file writer for COCO. |
+| [per_image_annotation_writer.py](./per_image_annotation_writer.py) | `PerImageAnnotationWriter`: abstract writer of one label file per image. |
+| [per_image_annotation_writers/](./per_image_annotation_writers/README.md) | Per-image writers for YOLO segmentation, LabelMe and semantic label maps. |
+| [coco_mask_encoding.py](./coco_mask_encoding.py) | `CocoMaskEncoding`: polygon or run-length `segmentation` of `CocoWriter`. |
 | [class_list_file.py](./class_list_file.py) | `ClassListFile`: `classes.txt` with one class name per line. |
-| [formats/](./formats/README.md) | Concrete writers for COCO, YOLO segmentation, LabelMe and semantic label maps. |
 | [annotation_format.py](./annotation_format.py) | `AnnotationFormat`: supported formats, display names and default writers. |
 | [json_value.py](./json_value.py) | `JsonValue`: recursive type of JSON documents. |
 

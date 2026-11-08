@@ -1,9 +1,11 @@
 from .annotation_format import AnnotationFormat
-from .base import AnnotationWriter
+from .annotation_writer import AnnotationWriter
+from .annotation_writers import CocoWriter
 from .class_list_file import ClassListFile
-from .formats import CocoMaskEncoding, CocoWriter, LabelMeWriter, SemanticMaskWriter, YoloWriter
+from .coco_mask_encoding import CocoMaskEncoding
 from .json_value import JsonValue
-from .per_image import PerImageAnnotationWriter
+from .per_image_annotation_writer import PerImageAnnotationWriter
+from .per_image_annotation_writers import LabelMeWriter, SemanticMaskWriter, YoloWriter
 
 __all__ = [
     "AnnotationFormat",

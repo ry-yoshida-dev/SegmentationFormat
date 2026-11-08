@@ -6,9 +6,9 @@ from geometry import Box2DFormat
 
 from ...annotation import AnnotationDataset, InstanceAnnotation
 from ...mask import MaskPolygonizer, RunLengthEncoding
-from ..base import AnnotationWriter
+from ..annotation_writer import AnnotationWriter
+from ..coco_mask_encoding import CocoMaskEncoding
 from ..json_value import JsonValue
-from .coco_mask_encoding import CocoMaskEncoding
 
 
 class CocoWriter(AnnotationWriter):
